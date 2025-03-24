@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Pérez, María González">
+    <meta name="description" content="Página web de ejemplo para proyecto HTML5 y CSS3">
+    <title>Proyecto Web HTML5/CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a nuestra página web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="contenedor">
+                <h2>Sección de inicio</h2>
+                <p>Este es un párrafo de ejemplo que muestra el formato de texto en HTML5. Aquí podemos incluir información relevante sobre nuestro sitio web.</p>
+                <p>Otro párrafo con <strong>texto en negrita</strong>, <em>texto en cursiva</em> y <a href="#">un enlace de ejemplo</a>.</p>
+            </div>
+        </section>
+
+        <section id="contenido">
+            <div class="contenedor">
+                <h2>Tabla de ejemplo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>$1200</td>
+                            <td>En stock</td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td>$800</td>
+                            <td>Agotado</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>$500</td>
+                            <td>En stock</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <div class="contenedor">
+                <h2>Multimedia</h2>
+                <div class="media-container">
+                    <div class="media-item">
+                        <h3>Imagen</h3>
+                        <img src="images/ejemplo.jpg" alt="Imagen de ejemplo" width="300">
+                    </div>
+                    <div class="media-item">
+                        <h3>Video</h3>
+                        <video width="300" controls>
+                            <source src="media/video.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <h3>Audio</h3>
+                        <audio controls>
+                            <source src="media/audio.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario">
+            <div class="contenedor">
+                <h2>Formulario de contacto</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Género:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="masculino" name="genero" value="masculino">
+                            <label for="masculino">Masculino</label>
+                            
+                            <input type="radio" id="femenino" name="genero" value="femenino">
+                            <label for="femenino">Femenino</label>
+                            
+                            <input type="radio" id="otro" name="genero" value="otro">
+                            <label for="otro">Otro</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Intereses:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                            <label for="tecnologia">Tecnología</label>
+                            
+                            <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                            <label for="deportes">Deportes</label>
+                            
+                            <input type="checkbox" id="musica" name="intereses" value="musica">
+                            <label for="musica">Música</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="mx">México</option>
+                            <option value="es">España</option>
+                            <option value="ar">Argentina</option>
+                            <option value="co">Colombia</option>
+                            <option value="pe">Perú</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>© 2023 Proyecto Web. Todos los derechos reservados.</p>
+            <p>Integrantes del equipo que trabajaron en esta actividad:</p>
+            <ul>
+                <li>Leonardo Emmanuel Ortiz Yañez</li>
+                <li>Rafael Alejandro Salinas Vega</li>
+            </ul>
+            <p>Nota: Todos participaron en el proyecto.</p>
+        </div>
+    </footer>
+</body>
+</html>
